@@ -62,13 +62,13 @@
         <div class="mb-3 border-bottom row">
                         <label class="col-sm-3 col-form-label">電話番号</label>
                         <div class="col-sm-9">
-                            <%= params["tell"] %>
+                            <%= params["tel"] %>
                         </div>
                     </div>
-         <div class="mb-3 border-bottom row">
+        <div class="mb-3 border-bottom row">
                         <label class="col-sm-3 col-form-label">内容</label>
                         <div class="col-sm-9">
-                            <%= params["content"] %>
+                            <%= params["content"].gsub(/\r\n|\r|\n/, "<br>") %>
                         </div>
                     </div>
         <div class="text-center mb-4">
